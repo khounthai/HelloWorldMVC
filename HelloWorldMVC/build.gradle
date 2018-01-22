@@ -26,7 +26,6 @@ subprojects
 }
 
 group = 'helloworldmvc'
-//mainClassName='helloworldmvc.HelloWorldMVC'
 version='0.0.1'
 
 task sourcesJar(type: Jar, dependsOn: classes) {
@@ -44,10 +43,10 @@ archives sourcesJar
 archives javadocJar
 }
 
-/*jar {
+jar {
 manifest {
 attributes('Implementation-Title': project.name,
 'Implementation-Version': project.version,
 'Main-Class': project.mainClassName)
 }
-}*/
+}
